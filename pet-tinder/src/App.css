@@ -1,0 +1,154 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.tinder-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.preferences-form,
+.profile-card,
+.favorite-profiles {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 400px;
+  margin: 16px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.preferences-form {
+  padding: 30px;
+}
+
+.preferences-form h2 {
+  margin: 20px 0;
+  color: #2c3e50;
+}
+
+.preferences-form label {
+  display: block;
+  margin: 10px 0;
+  color: #7f8c8d;
+}
+
+.preferences-form select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.preferences-form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.preferences-form button:hover {
+  background-color: #2980b9;
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.profile-card h2 {
+  margin: 20px 0;
+  color: #2c3e50;
+}
+
+.profile-card p {
+  margin: 10px 0;
+  color: #7f8c8d;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.buttons button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  flex: 1;
+  margin: 0 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+  background-color: #2980b9;
+}
+
+.favorite-profiles-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid #ecf0f1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.favorite-profiles-list li:hover {
+  background-color: #ecf0f1;
+}
+
+.favorite-profiles-list img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.favorite-profiles-list h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.favorite-profiles-list p {
+  margin: 4px 0;
+  color: #7f8c8d;
+}
+
+.favorite-profiles-list button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.favorite-profiles-list button:hover {
+  background-color: #c0392b;
+}
