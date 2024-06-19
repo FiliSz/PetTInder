@@ -5,7 +5,11 @@ function PreferencesForm({ onPreferencesSelected }) {
   const [gender, setGender] = useState('');
 
   const handlePreferencesSubmit = () => {
-    onPreferencesSelected(country, gender);
+    if (country && gender) {
+      onPreferencesSelected(country, gender);
+    } else {
+      alert('Wybierz kraj i płeć.');
+    }
   };
 
   return (
